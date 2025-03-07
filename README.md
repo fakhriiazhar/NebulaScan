@@ -1,4 +1,4 @@
-# **Nebula Scan**
+                                                                  # **Nebula Scan**
 
 Nebula Scan adalah tools sederhana namun powerful untuk melakukan berbagai tugas jaringan seperti pencarian alamat IP, 
 pemindaian port, pemindaian UDP, dan deteksi WAF (Web Application Firewall). Tools ini ditulis dalam Python dan dirancang agar mudah digunakan serta berjalan di Windows, macOS, dan Linux (termasuk Kali Linux).
