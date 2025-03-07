@@ -12,21 +12,22 @@ Fitur
 
 Instalation
 1. Clone repository dari Github:
-git clone https://github.com/fakhriiazhar/NebulaScan.git
+```git clone https://github.com/fakhriiazhar/NebulaScan.git```
 
-2. Pindah ke direktori proyek:
-cd Nebula Scan
+3. Pindah ke direktori proyek:
+```cd Nebula Scan```
 
-3. Buat virtual environment (opsional tapi disarankan):
-python -m venv venv
+4. Buat virtual environment (opsional tapi disarankan):
+```python -m venv venv
 source venv/bin/activate  # Linux & macOS
 venv\Scripts\activate    # Windows
+```
 
-4. install depedencies:
-pip install -r requirements.txt
+5. install depedencies:
+```pip install -r requirements.txt```
 
-5. Jalankan tools:
-python3 Nebula Scan.py
+6. Jalankan tools:
+```python3 Nebula Scan.py```
 
 # **Penggunaan**
 
