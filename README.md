@@ -35,12 +35,12 @@ venv\Scripts\activate    # Windows
 
 Pilih fitur yang tersedia dari menu interaktif:
 
-1 Cari alamat IP dari hostname
+1. Cari alamat IP dari hostname
 
-2 Scan port otomatis
+2. Scan port otomatis
 
-3 Scan UDP port otomatis
+3. Scan UDP port otomatis
 
-4 Cek apakah domain menggunakan WAF
+4. Cek apakah domain menggunakan WAF
 
-5 Keluar
+5. Keluar
