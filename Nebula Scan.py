@@ -5,6 +5,7 @@ import ipaddress
 import requests
 from colorama import Fore, Style, init
 import time
+import os
 
 init(autoreset=True)
 
@@ -20,6 +21,12 @@ Code by: fakhriiazhar
                            https://github.com/fakhriiazhar
 """
 {Style.RESET_ALL}  
+print(ascii_banner)
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+clear_screen()
 print(ascii_banner)
 
 def validate_ip(ip):
@@ -135,17 +142,29 @@ def main():
         if choice == "1":
             hostname = input("Masukkan hostname: ")
             get_ip_address(hostname)
+            input(f"\n{Fore.CYAN}Tekan Enter untuk kembali ke menu...")
+            clear_screen()
+            print(ascii_banner)
         elif choice == "2":
             ip = input("Masukkan IP target: ")
             if validate_ip(ip):
                 port_scanner(ip)
+                input(f"\n{Fore.CYAN}Tekan Enter untuk kembali ke menu...")
+                clear_screen()
+                print(ascii_banner)
         elif choice == "3":
             ip = input("Masukkan IP target: ")
             if validate_ip(ip):
                 udp_scanner(ip)
+                input(f"\n{Fore.CYAN}Tekan Enter untuk kembali ke menu...")
+                clear_screen()
+                print(ascii_banner)
         elif choice == "4":
             domain = input("Masukkan domain: ")
             check_waf(domain)
+            input(f"\n{Fore.CYAN}Tekan Enter untuk kembali ke menu...")
+            clear_screen()
+            print(ascii_banner)
         elif choice == "5":
             print("Keluar dari program.")
             break
@@ -153,4 +172,11 @@ def main():
             print(f"{Fore.RED}Pilihan tidak valid, coba lagi.")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print(f"\n{Fore.YELLOW}Dibatalkan oleh pengguna. Kembali ke menu utama...")
+        clear_screen()
+        print(ascii_banner)
+        main()
+
