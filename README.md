@@ -14,7 +14,7 @@ Instalation
 
 3. Pindah ke direktori proyek:
 
-```cd Nebula Scan```
+```cd NebulaScan```
 
 4. Buat virtual environment (opsional tapi disarankan):
 ```
@@ -29,7 +29,7 @@ venv\Scripts\activate    # Windows
 
 6. Jalankan tools:
 
-```python3 Nebula Scan.py```
+```python3 NebulaScan.py```
 
 # **Penggunaan**
 
